@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script> <!-- Link the JavaScript file -->
+</head>
+
+<body>
+  <!-- Background Video -->
+  <video autoplay muted loop class="bg-video">
+    <source src="videoplayback.mp4" type="video/mp4" />
+  </video>
+
+  <div class="wrapper">
+    <!-- Top Bar -->
+    <header class="top-bar">
+      <div class="logo">Portfolio</div>
+      <nav class="top-nav">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="certificates.html">Certificates</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="about-content">
+      <div class="about-header">
+        <img src="image.JPG" alt="Your Photo" class="profile-image" />
+        <h2>About Me</h2>
+      </div>
+
+      <!-- About Me Summary -->
+      <section class="about-summary">
+        <p>Hi, I'm Kapu Karthik Chowdary, a passionate Front-End Developer with a love for creating dynamic, user-friendly websites. I specialize in HTML, CSS, JavaScript, React, and other cutting-edge web technologies. I am a passionate and dedicated software developer with hands-on experience in web and application development. My expertise spans across a variety of technologies, including JavaScript, React, HTML, CSS, SQL, and Python. I have successfully worked on a wide range of projects, from building learning management systems and real-time chat applications to developing functional web apps with rich user interfaces and dynamic features.
+
+            I am particularly adept at working with front-end technologies like React, ensuring smooth user experiences with responsive designs and efficient code. Additionally, I have a strong understanding of back-end development, demonstrated through my experience with Django and PostgreSQL, creating reliable and scalable solutions.
+            
+            As an advocate for clean and efficient coding practices, I strive to maintain high standards in my work while continuously learning and staying up-to-date with the latest trends in the tech industry. I am always eager to tackle new challenges, collaborate with cross-functional teams, and contribute to innovative projects that drive business success.
+            
+            Currently, I am expanding my skill set with data science and full-stack development, with a keen interest in leveraging my skills to create impactful software solutions.</p>
+      </section>
+
+      <!-- Three Sections under About Me -->
+      <div class="sections-container">
+        <!-- Professional Background Section -->
+        <section class="professional-background">
+          <h3>Education</h3>
+          <button onclick="toggleContent('Education')">Show More</button>
+          <div id="Education" class="hidden-content">
+            <p>Bachelor's Degree - Bachelor of Technology<br>
+                College - Koneru Lakshmaiah Educational Institutions <br>
+                Stream - Computer Science and Engineering <br>
+    Grade - 8.55 / 10.0 GPA</p>
+    <br>
+    <p> XII - Andhra Pradesh Board of Intermediate Education<br>
+    College - Sri Chaitanya Junior College <br>
+Stream - MPC
+Grade - 924 / 1000 Marks (92%) </p>
+<br>
+<p>X - Andhra Pradesh State Board of Secondary School Education<br>
+    School - Dr.KKR Gowtham Concept School<br>
+    Stream - State Board<br>
+    Grade - 9.30 / 10.0 GPA
+</p>
+          </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills">
+          <h3>Skills & Technologies</h3>
+          <button onclick="toggleContent('skillsContent')">Show More</button>
+          <div id="skillsContent" class="hidden-content">
+            <ul>
+              <li>Java, C, Python</li>
+              <li>HTML, CSS, JavaScript</li>
+              <li>React, Node.js, Express</li>
+              <li>Git, Visual Studio Code, Docker</li>
+              <li>Responsive Web Design, API Integration</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Hobbies & Interests Section -->
+        <section class="hobbies">
+          <h3>Hobbies & Interests</h3>
+          <button onclick="toggleContent('hobbiesContent')">Show More</button>
+          <div id="hobbiesContent" class="hidden-content">
+            <p>In my free time, I enjoy hiking, playing chess, and contributing to open-source projects. I'm also passionate about photography and exploring new technologies.</p>
+          </div>
+        </section>
+      </div>
+
+      <!-- Call-to-Action Section -->
+      <section class="cta">
+        <p>Feel free to explore my portfolio or connect with me through LinkedIn!</p>
+      </section>
+    </main>
+  </div>
+
+</body>
+
+</html>

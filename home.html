@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <video autoplay muted loop class="bg-video">
+    <source src="videoplayback.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="wrapper">
+    <header class="top-bar">
+      <div class="logo">Portfolio</div>
+      <nav class="top-nav">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="certificates.html">Certificates</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-content">
+     <div class="content" style="text-align: left; margin-left: 100px;">
+  <h1 class="slide-in delay-1">Welcome to My Portfolio</h1>
+  <h2 class="slide-in delay-2">Myself Kapu Karthik Chowdary</h2>
+  <p class="slide-in delay-3">I am a passionate and dedicated developer with proven expertise in the skills listed below.</p>
+  <p class="slide-in delay-5">Explore my portfolio to learn more.</p>
+  </div>
+    </main>
+  </div>
+  <div class="profile-links-wrapper">
+    <button class="profile-button" onclick="toggleProfiles()">View My Profiles</button>
+  </div>
+
+  <div id="profiles" class="profiles-container">
+    <a href="https://www.hackerrank.com/profile/KLU_2100030239" class="profile-link" target="_blank">https://www.hackerrank.com/profile/KLU_2100030239</a>
+    <a href="https://leetcode.com/u/KLU_2100030239/" class="profile-link" target="_blank">https://leetcode.com/u/KLU_2100030239/</a>
+    <a href="https://www.codechef.com/users/karthik2757" class="profile-link" target="_blank">https://www.codechef.com/users/karthik2757</a>
+  </div>
+    <script>
+    function toggleProfiles() {
+      const profiles = document.getElementById('profiles');
+      profiles.style.display = profiles.style.display === 'flex' ? 'none' : 'flex';
+    }
+  </script>
+
+</body>
+</html>
